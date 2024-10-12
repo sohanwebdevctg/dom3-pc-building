@@ -10,12 +10,19 @@ const listFun = (name, price = 0) => {
   tr.style.textAlign = 'center';
   tr.innerHTML = `<td>${name}</td><td>${price}</td>`;
   listItem.appendChild(tr);
-
   
   //set price in total
   total += price;
 
-  console.log(total)
+  // total price show
+  if(price > 0){
+    let footer = document.getElementById('footer');
+    footer.innerHTML = `
+    <tr class="w-full text-center" >
+      <th>price</th>
+      <th>${total}</th>
+    </tr>`
+  }
 
 }
 
@@ -141,3 +148,19 @@ const webcamBtn = () => {
   }
   
 }
+
+// discount
+const discountBtn = () => {
+
+  const discountCode = document.getElementById('discount');
+  const checkCode = Number(discountCode.value);
+  
+  if(checkCode === 101){
+    let value = (total * 10) / 100;
+    total = total - value;
+  }else{
+    alert('please check code')
+  }
+
+}
+

@@ -136,11 +136,8 @@
         </thead>
         <tbody id="listItem">
         </tbody>
-        <tfoot class="bg-black bg-opacity-20 hidden">
-          <tr class="w-full text-center">
-            <th>price</th>
-            <th>123</th>
-          </tr>
+        <tfoot class="bg-black bg-opacity-20" id="footer">
+          
         </tfoot>
       </table>
       <!-- list end -->
@@ -150,8 +147,8 @@
           <li>
             <p class="font-bold text-sm md:text-base">Use Promo Code for 10% Discount:</p>
           <label class="input input-bordered flex items-center gap-2 mt-1">
-            <input type="text" class="grow" placeholder="discount code 101" />
-            <button class="btn btn-sm bg-green-500 hover:bg-green-500 text-white">submit</button>
+            <input type="text" class="grow" placeholder="discount code 101" id="discount" />
+            <button onclick="discountBtn()" class="btn btn-sm bg-green-500 hover:bg-green-500 text-white">submit</button>
           </label>
           </li>
           <li>
