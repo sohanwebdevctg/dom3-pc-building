@@ -154,12 +154,12 @@
           <li>
             <p class="font-bold text-sm md:text-base">Enter your Budget:</p>
             <label class="input input-bordered flex items-center gap-2 mt-1">
-              <input type="text" class="grow" placeholder="enter your amount" />
-              <button class="btn btn-sm bg-green-500 hover:bg-green-500 text-white">submit</button>
+              <input type="text" class="grow" placeholder="enter your amount" id="budget" />
+              <button onclick="budgetFun()" class="btn btn-sm bg-green-500 hover:bg-green-500 text-white">submit</button>
             </label>
           </li>
         </ul>
-        <p class="text-base text-right mt-1 font-bold">Total Cost : <span>00</span></p>
+        <p class="text-base text-right mt-1 font-bold">Total Cost : <span id="cost">00</span></p>
        </div>
       <!-- calculate end -->
      </div>

@@ -158,8 +158,26 @@ const discountBtn = () => {
   if(checkCode === 101){
     let value = (total * 10) / 100;
     total = total - value;
+    discountCode.value = "";
   }else{
     alert('please check code')
+  }
+
+}
+
+// budget
+const budgetFun = () => {
+
+  const budgetCode = document.getElementById('budget');
+  const checkAmount = Number(budgetCode.value);
+
+  const costAmount = document.getElementById('cost')
+
+  if(checkAmount > 0 && checkAmount > total){
+    costAmount.innerText = checkAmount - total;
+
+  }else{
+    alert('your amount is to low')
   }
 
 }
