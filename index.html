@@ -40,7 +40,7 @@
           <li>
             <input type="text" placeholder="Type here" class="input input-bordered input-xs xl:input-sm w-full" id="desktop"/>
           </li>
-          <li><button class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
+          <li><button onclick="desktopBtn()" class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
         </ul>
        </div>
       <!-- item2 end -->
@@ -53,7 +53,7 @@
           <li>
             <input type="text" placeholder="Type here" class="input input-bordered input-xs xl:input-sm w-full" id="keyboard"/>
           </li>
-          <li><button class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
+          <li><button onclick="keyboardBtn()" class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
         </ul>
        </div>
       <!-- item3 end -->
@@ -66,7 +66,7 @@
           <li>
             <input type="text" placeholder="Type here" class="input input-bordered input-xs xl:input-sm w-full" id="mouse"/>
           </li>
-          <li><button class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
+          <li><button onclick="mouseBtn()" class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
         </ul>
        </div>
       <!-- item4 end -->
@@ -79,7 +79,7 @@
           <li>
             <input type="text" placeholder="Type here" class="input input-bordered input-xs xl:input-sm w-full" id="mousepad"/>
           </li>
-          <li><button class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
+          <li><button onclick="mousepadBtn()" class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
         </ul>
        </div>
       <!-- item5 end -->
@@ -92,7 +92,7 @@
           <li>
             <input type="text" placeholder="Type here" class="input input-bordered input-xs xl:input-sm w-full" id="headphone"/>
           </li>
-          <li><button class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
+          <li><button onclick="headphoneBtn()" class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
         </ul>
        </div>
       <!-- item6 end -->
@@ -105,7 +105,7 @@
           <li>
             <input type="text" placeholder="Type here" class="input input-bordered input-xs xl:input-sm w-full" id="microphone"/>
           </li>
-          <li><button class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
+          <li><button onclick="microphoneBtn()" class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
         </ul>
        </div>
       <!-- item7 end -->
@@ -118,15 +118,57 @@
           <li>
             <input type="text" placeholder="Type here" class="input input-bordered input-xs xl:input-sm w-full" id="webcam"/>
           </li>
-          <li><button class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
+          <li><button onclick="webcamBtn()" class="btn btn-xs xl:btn-sm bg-green-600 hover:bg-green-600 text-white">Buy Now</button></li>
         </ul>
        </div>
       <!-- item8 end -->
     </div>
     <!-- left end -->
     <!-- right start -->
-     <div class="w-full lg:w-[30%] bg-blue-400">
-      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti deserunt voluptate non vel</p>
+     <div class="w-full lg:w-[30%]">
+      <!-- list start -->
+      <table class="w-full h-60">
+        <thead class="bg-green-500 text-white">
+          <tr class="w-full">
+            <th>Name</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="listItem">
+          <tr class="w-full text-center">
+            <td>one</td>
+            <td>one</td>
+          </tr>
+        </tbody>
+        <tfoot class="bg-black bg-opacity-20">
+          <tr class="w-full text-center">
+            <th>price</th>
+            <th>123</th>
+          </tr>
+        </tfoot>
+      </table>
+      <!-- list end -->
+      <!-- calculate start -->
+       <div class="mt-5">
+        <ul class=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-1 gap-2 sm:gap-3 md:gap-4 lg:gap-2">
+          <li>
+            <p class="font-bold text-sm md:text-base">Use Promo Code for 10% Discount:</p>
+          <label class="input input-bordered flex items-center gap-2 mt-1">
+            <input type="text" class="grow" placeholder="discount code 101" />
+            <button class="btn btn-sm bg-green-500 hover:bg-green-500 text-white">submit</button>
+          </label>
+          </li>
+          <li>
+            <p class="font-bold text-sm md:text-base">Enter your Budget:</p>
+            <label class="input input-bordered flex items-center gap-2 mt-1">
+              <input type="text" class="grow" placeholder="enter your amount" />
+              <button class="btn btn-sm bg-green-500 hover:bg-green-500 text-white">submit</button>
+            </label>
+          </li>
+        </ul>
+        <p class="text-base text-right mt-1 font-bold">Total Cost : <span>00</span></p>
+       </div>
+      <!-- calculate end -->
      </div>
     <!-- right end -->
   </main>
