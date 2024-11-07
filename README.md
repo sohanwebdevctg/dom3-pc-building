@@ -1,4 +1,4 @@
 * ### This is my dom-3 project. In this project i will show my pc building cost calculation. In this project, the user will select the product, but the value of how many products will be taken, if the user does not give the value in the product card, then the product will not be selected. After the product is selected, the price will be added along with its quantity. Then there will be a discount with a percentage code on that total, then the user will give his payment price and from there the price will be deducted from the total, then he will price how much money is left.
 
-* ### live link : ()
-* ### code link : ()
+* ### live link : (https://sohanwebdevctg.github.io/dom3-pc-building)
+* ### code link : (https://github.com/sohanwebdevctg/dom3-pc-building)
